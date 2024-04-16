@@ -1,26 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div id="app">
+  <nav>
+        <router-link to='/'>Home</router-link>
+      
+    </nav>
+    <router-view />
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import GridDevice from './components/GridDevice.vue';
+//import LayoutNavi from './components/LayoutNavi.vue';
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: 'App',
+    // components:{
+    //     LayoutNavi
+    // }
+   
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.daChon {
+    color: brown;
 }
+
+.custom-color-red {
+  background-color: #ffcccc; /* Customize background color for rows with 'red' color */
+}
+
+.custom-color-blue {
+  background-color: #cce5ff; /* Customize background color for rows with 'blue' color */
+}
+
+.custom-color-green {
+  background-color: #d4ffd6; /* Customize background color for rows with 'green' color */
+}
+.custom-table {
+  background-color: transparent; /* Set the background color to gray */
+}
+
 </style>
